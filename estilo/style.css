@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+}
+
+* { /*configurações universais de todos os elementos*/
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    /* text-transform: uppercase;Deixar tudo em letra maiuscula */
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+}
+header > p{
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;/*Tirar o sublinhado*/
+    font-weight: bolder; /*Texto em negrito*/
+}
+header a:hover, footer a:hover{/*a Pseudo classe :hover identifica quando o mouse está por cima de um elemento*/
+    text-decoration: underline; /*Deixar o texto sublinhado*/
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;/* Espaço entre as palavras */
+    padding-left: 30px;
+    font-size: 2.5vw;
+}
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(23, 22, 22, 0.697);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.749);
+    background-attachment: fixed; /*Efeito de deixar a foto parada, efeito paralax*/
+}
+section.imagem > p{
+    background-color: rgba(44, 44, 44, 0.719);
+    width: 400px;
+    text-shadow: 1px 1px 0px black;
+}
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
