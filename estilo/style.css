@@ -23,7 +23,7 @@ header{
     text-align: center;
     /* width: 100%; */
 }
-header > h1{
+header > h2{
     padding-top: 50px;
     /* text-transform: uppercase;Deixar tudo em letra maiuscula */
     font-variant: small-caps;
